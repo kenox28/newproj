@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        padding: 20px;
+        margin: 20px;
+        border: 10px solid grey;
+        background-color: pink;
+      }
+      .container {
+        width: 550px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+        padding: 20px;
+      }
+
+      .left {
+        width: 45%;
+        float: left;
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .right {
+        width: 50%;
+        float: right;
+        background-color: #e74c3c;
+        color: #fff;
+        padding: 10px;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      .flex-container {
+        display: flex;
+        justify-content: space-around;
+        background-color: #f0f0f0;
+        padding: 10px;
+      }
+
+      .flex-item {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid #333;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        gap: 10px;
+      }
+
+      .grid-item {
+        background-color: #3498db;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      .styled-text {
+        font-size: 70px;
+        font-weight: bold;
+        color: #ff5733;
+        text-align: center;
+        text-decoration: underline;
+      }
+      .image-bg {
+        background-image: url("10.jpg");
+        background-size: auto;
+        background-repeat: no-repeat;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .gradient-bg {
+        background: linear-gradient(to bottom, #04ea54, #cf05e1);
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+
+      .color-bg {
+        background-color: red;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+      }
+      .border-box {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        font-size: 18px;
+        background-color: #f2f2f2;
+      }
+
+      .solid-border {
+        border: 2px solid #3498db;
+      }
+
+      .dotted-border {
+        border: 2px dotted #e74c3c;
+      }
+
+      .double-border {
+        border: 4px double #27ae60;
+      }
+
+      .rounded-corners {
+        border-radius: 20px;
+      }
+
+      .different-borders {
+        border-top: 1px solid #e74c3c;
+        border-right: 2px dashed #3498db;
+        border-bottom: 3px solid #27ae60;
+        border-left: 4px dotted #f39c12;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>BOX MODEL</h1>
+    <div class="box">Content.</div>
+    <h2>CSS layout</h2>
+    <div class="container clearfix">
+      <div class="left">
+        <h1>Left</h1>
+      </div>
+      <div class="right">
+        <h1>Right</h1>
+      </div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+    </div>
+
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+      <div class="grid-item">Item 5</div>
+      <div class="grid-item">Item 6</div>
+    </div>
+    <p class="styled-text">AYAW TAWN ME I HAGBONG MAAM .</p>
+    <div class="image-bg">
+      <h1>DILI SAKIT SA DUGHAN ANG MANG HAGBONG KAG STUDENT MAAM?</h1>
+      <p>SAG 3.0 LANG .</p>
+    </div>
+
+    <div class="gradient-bg">
+      <h1>OG PAPASARON NALANG DIAY ME NIMO MAAM</h1>
+      <p>PA HANGYOA .</p>
+    </div>
+
+    <div class="color-bg">
+      <h1>KABALO MAN KUNG NAA KAY MALO LUY'ON NGA KASING-KASING MAAM</h1>
+      <p>PLEASE.</p>
+    </div>
+
+    <div class="border-box solid-border">Solid Border</div>
+
+    <div class="border-box dotted-border">Dotted Border</div>
+
+    <div class="border-box double-border">Double Border</div>
+
+    <div class="border-box rounded-corners">Rounded Corners</div>
+
+    <div class="border-box different-borders">Different Borders</div>
+  </body>
+</html>
